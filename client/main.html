@@ -1,0 +1,20 @@
+<template name="main">
+    <h2>{{page}}'s Page</h2>
+
+    <form id="msg" action="">
+        <div class="input-group">
+            <input type="text" id="post"
+                   class="form-control"
+                   placeholder="Tell me somthing...">
+            <div class="input-group-btn">
+                <button class="btn btn-primary">
+                    <i class="glyphicon glyphicon-pencil">
+                        Post
+                    </i>
+                </button>
+            </div>
+
+        </div>
+    </form>
+    {{> posts }}
+</template>

@@ -1,0 +1,24 @@
+<template name="posts">
+    {{#each posts}}
+        <div class="media">
+
+            <div class="media-left">
+
+                <a href="#">
+
+                    <img class="media-object" src="{{author.profile_image}}" alt="{{author.name}}">
+                    <!-- lorempixel 이라는 랜덤 이미지 뽑아주는 사이트 -->
+                </a>
+
+            </div>
+
+            <div class="media-body">
+
+                <h4 class="media-heading">{{author.name}}</h4>
+
+                {{message}}
+            </div>
+
+        </div>
+    {{/each}}
+</template>
